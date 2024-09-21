@@ -4,7 +4,7 @@ package com.mygdx.tetris;
  * @author Nkosingiphile
  */
 public class Tetronimoes {
-    public static int[][][] tetronimoes = {
+    public static final int[][][] tetronimoes = {
         {
             //square
             {1,1},

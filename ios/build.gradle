@@ -1,10 +1,17 @@
-sourceSets.main.java.srcDirs = [ "src/" ]
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath "com.mobidevelop.robovm:robovm-gradle-plugin:$robovmVersion"
+  }
+}
+apply plugin: 'robovm'
 
-sourceCompatibility = '1.7'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 ext {
-	mainClassName = "com.mygdx.tetris.IOSLauncher"
+  mainClassName = "com.mygdx.tetris.ios.IOSLauncher"
 }
 
 launchIPhoneSimulator.dependsOn build
@@ -12,8 +19,15 @@ launchIPadSimulator.dependsOn build
 launchIOSDevice.dependsOn build
 createIPA.dependsOn build
 
-
 eclipse.project {
-    name = appName + "-ios"
-    natures 'org.robovm.eclipse.RoboVMNature'
+  name = appName + "-ios"
+  natures 'org.robovm.eclipse.RoboVMNature'
+}
+
+dependencies {
+  implementation "com.badlogicgames.gdx:gdx-backend-robovm:$gdxVersion"
+  implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-ios"
+  implementation "com.mobidevelop.robovm:robovm-cocoatouch:$robovmVersion"
+  implementation "com.mobidevelop.robovm:robovm-rt:$robovmVersion"
+  implementation project(':core')
 }
