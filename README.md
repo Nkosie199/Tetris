@@ -1,8 +1,22 @@
 # Tetris
 
-A [libGDX](https://libgdx.com/) project generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
+Classic Tetris, made with [libGDX](https://libgdx.com/). It runs in a browser, on a desktop and on Android.
 
-This project was generated with a template including simple application launchers and an `ApplicationAdapter` extension that draws libGDX logo.
+**Play it:** https://nkosie199.github.io/Tetris/ (rebuilt and published by GitHub on every push to `master`, see
+`.github/workflows/web.yml`).
+
+**Controls:** arrows move, Up rotates, Down drops faster, Space drops, P pauses, Enter starts again after game over.
+On a phone, tap the left or right of the board to move, the middle to rotate, the bottom to drop, and the side panel
+to pause.
+
+**Put it on LuckyB:** Profile → Publish a Game → **New Tab**, and use the link above as the Launch URL.
+
+**Run it on this computer:** `gradlew lwjgl3:run` (Windows: `gradlew.bat lwjgl3:run`). To try the browser version
+locally, `gradlew html:dist` builds it into `html/build/dist`.
+
+**Tests:** `gradlew core:test` checks the game rules in `core/src/main/java/com/mygdx/tetris/Board.java`.
+
+The project was generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff).
 
 ## Platforms
 
