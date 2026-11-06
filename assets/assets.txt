@@ -1,7 +1,7 @@
 d:assets:assets:0:application/unknown:1
-t:calibri.fnt:calibri-1c69d8ad67e5e5acc5cb97932dff2521.fnt:22566:application/unknown:1
-t:assets.txt:assets-97a563f1d9d329641fed02a5866b09cb.txt:24:text/plain:1
 i:calibri.png:calibri-052854a16c2670dce20aeeeaeb810858.png:15008:image/png:1
+t:assets.txt:assets-0240185ffb9c55a5f7809c6639c696f0.txt:24:text/plain:1
+t:calibri.fnt:calibri-1c69d8ad67e5e5acc5cb97932dff2521.fnt:22566:application/unknown:1
 t:com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl:particles.fragment-b90524761fdf09b0a836056d590c30b8.glsl:820:application/unknown:1
 t:com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl:particles.vertex-f25b8b2fae10b9bfa09bfdd484923148.glsl:2886:application/unknown:1
 t:com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl:default.fragment-e1c018bd48044c8b67c7bbc53145e540.glsl:5874:application/unknown:1
